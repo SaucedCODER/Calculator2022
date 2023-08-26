@@ -1,0 +1,52 @@
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    background-color:  hsl(222, 26%, 31%) ;
+    padding: 1.5em;
+    
+  }
+  input{
+      color: white;
+      padding: .4em;
+      border: none;
+      outline: none;
+      font-size: 42px !important;
+      text-align: end;
+    font-family: 'Spartan' !important ;
+
+  }
+  input,.btn-area{
+    background-color: hsl(224, 36%, 15%);
+    font-size: 30px;
+    border-radius: 5px;
+
+  }
+  .btn-area{
+      display: grid;
+      gap: .5em;
+      grid-template-columns: repeat(4,1fr);
+      padding: 1em;
+  }
+  .btn-area div{
+      background-color: hsl(30, 25%, 89%);
+    border-radius: 5px;
+    text-align: center;
+  height: 60px;
+  line-height: 65px;
+  cursor: pointer;
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 5px 0px  hsl(28, 16%, 65%)
+  ;
+  }
+ 
+  .col-span2{
+      grid-column: span 2;
+  }
+  @media screen and (max-width: 700px) {
+    body {
+      display: block;
+      
+    }
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="apps/styles.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Public+Sans:wght@300;400&family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    html{
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Spartan', sans-serif ;
+    display: grid;
+    place-items: center;
+    background-color:  hsl(222, 26%, 31%) ;
+    height: 100vh;
+  }
+  @media screen and (max-width: 700px) {
+    body {
+      display: block;
+      
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="color: white; font-size: 40px;">simple calc... </h1>
+
+   
+      <input type="text"readonly="readonly" data-id="new" id="input">
+   
+
+    <div class="btn-area" id="keys">
+      <div class="n7">7</div>
+      <div class="n8">8</div>
+      <div class="n9">9</div>
+      <div class="del" style="background-color: hsl(225, 21%, 49%);color:white;
+       box-shadow: 0px 5px 0px  hsl(224, 28%, 35%)
+  ;">Del</div>
+      <div class="n4">4</div>
+      <div class="n5">5</div>
+      <div class="n6">6</div>
+      <div class="plus">+</div>
+      <div class="n1">1</div>
+      <div class="n2">2</div>
+      <div class="n3">3</div>
+      <div class="minus">-</div>
+      <div class="deci">.</div>
+      <div class="n0">0</div>
+      <div class="div">/</div>
+      <div class="times">&times;</div>
+      <div class="reset col-span2" style="background-color: hsl(225, 21%, 49%);color:white;
+       box-shadow: 0px 5px 0px  hsl(224, 28%, 35%)
+  ;">Reset</div>
+      <div class="equ col-span2" style="background-color: hsl(6, 63%, 50%);color:white;
+       box-shadow: 0px 5px 0px  hsl(6, 70%, 34%)
+  ;
+      ">=</div>
+    </div>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">zeus orilla</a>.
+  </div>
+  <script src="apps/zcript.js"></script>
+</body>
+</html>
